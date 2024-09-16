@@ -1,0 +1,159 @@
+ls
+whoami
+pwd
+man man
+ls -l
+ls -la
+ls
+cd repogit/
+ls
+cd ..
+ls
+cd READMR
+cat README
+cd README
+cat README
+git clone https://github.com/BautistaSantosTapia/SantosTapia_Vagrant.git
+ls
+cd SantosTapia_Vagrant/
+ls
+history
+history > historial.txt
+ls
+cat historial.txt 
+git status
+git add .
+git status
+git commit -m "mi primer commit"
+git config --global user.name "BautistaSantosTapia"
+git commit -m "mi primer commit"
+git push
+git config --global user.email "bautisantostapia04@gmail.com"
+git config --global user.name "BautistaSantosTapia"
+git commit -m "mi primer commit"
+git push
+cd ..
+ls
+exit
+ls
+ls -la
+ssh-keygen -t ed25519
+ls -la
+cd .ssh
+ls
+cat id_ed25519.pub
+cd ..
+ls
+cd repogit
+ls
+git clone git@github.com:BautistaSantosTapia/SantosTapia_Vagrant.git
+ls
+cd SantosTapia_Vagrant/
+ls
+history
+history > historial.txt
+ls
+git status
+git add .
+git status
+git commit -m"Mi primer commit"
+git push
+cd ..
+ls
+echo "hola"
+echo "hola" > archivo
+echo "hola" > archivo_1.txt
+ls
+cat archivo_1.txt 
+echo "chau" >> archivo_1.txt
+cat archivo_1.txt 
+echo "buenos dias" > archivo_1.txt
+cat archivo_1.txt 
+bc <<<2+4
+cat << FIN > archivo_2.txt
+linea 1
+linea 2
+linea 3
+FIN
+
+cat archivo_2.txt 
+cat << chau > archivo_2.txt 
+linea 4
+linea 5
+linea 6
+chau
+
+cat archivo_2.txt 
+cat << chau > archivo_3.txt
+este
+es
+el
+tres
+chau
+
+cat archivo_3.txt 
+cat archivo_3.txt archivo_2.txt > archivo_4.txt
+cat archivo_4.txt
+cat archivo_4.txt | head -n2
+cat archivo_4.txt | tail -n2
+cat archivo_4.txt | grep linea
+cat archivo_4.txt | grep 5
+exit
+ls
+cd repogit/TP_AySO/
+grep -i HOME_URL /etc/os-release
+grep -i Home_url /etc/os-release
+grep Home_url /etc/os-release
+whoami
+echo "usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+cat /proc/cpuinfo 
+grep -i "model name" /proc/cpuinfo 
+grep -i "model name" /proc/cpuinfo | tail -n1
+tail -n1 | grep -i "model name" /proc/cpuinfo
+grep -i "model name" /proc/cpuinfo | tail -n1
+grep -i "model name" /proc/cpuinfo | tail -n1 >> datos_usuario.txt 
+cat datos_usuario.txt 
+git add .
+git commit -m "feat: Aniadiendo informacion de CPU"
+cat /etc/passwd
+man grep
+grep -v nologin /etc/passwd
+grep -v nologin /etc/passwd | head -n10
+man sort
+grep -v nologin /etc/passwd | head -n10 | sort -t":" -k7
+grep -v nologin /etc/passwd | head -n10 | sort -t":" -k7 > lista_ordenada
+cat lista_ordenada 
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+apropos "dump traffic"
+apropos traffic
+apropos dump
+man tcpdump
+apropos network
+apropos capture
+apropos traffic
+apropos dump traffic
+apropos "dump traffic" > comando_dump_net
+cat comando_dump_net 
+ls
+echo apropos "dump traffic" >> comando_dump_net
+cat comando_dump_net 
+git add .
+git commit -m "ADD: Comando para Capturar y analizar el trafico de red"
+git status
+cat << FIN >> README.md 
+Alumno: Bautista Santos Tapia
+Division: 113
+Turno: Maniana
+FIN
+
+git add .
+git commit -m "ADD: Informacion del alumno al readme"
+git status
+ls -la $HOME
+history -a $HOME/.bash_history
